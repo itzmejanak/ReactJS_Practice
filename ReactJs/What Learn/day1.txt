@@ -1,0 +1,88 @@
+Concept 1(
+    when we make js html and css normally while making the website we have to call the js file into the html because whithou calling and doing the DOM manuplution it is no possible to manuplaute the html content which is FOUNDATION RULES.
+
+    concept 1.1(
+        #Understing the React files and folder:-
+        1. BUILD :-
+        --USED AT LAST WHEN WE CREATED OUR WEBSITE INTO THE REACT FILE BECAUSE BROWSER ONLY UNDERSTAND THE LANGUAGE LIKE HTNL CSS AND JS BY RUNNING CMD [$ npm run build] Which convert our created react project into HTML,CSS anf JS. Browser dosent Understand the language of of REACT SO WE USE CMD TO MAKE FINAL PROJECT.
+
+        2.NODE_MODULES :-
+        -- it is imp file to run react into live because when we run [$ npm creact-react-app name_folder] its going to install all react essential files which is mention into our package.json
+
+        3.SRC:-
+        -- this is the file where we will 99.99% work for a time to create our project we will discuss it into our Practics project by commenting how this will works.
+
+        4. .gitignore:-
+        --USED FOR WHAT TO PUSH INTO GITHUB AND WHAT NOT.
+
+        5.PACKAGE-LOCK.json:-
+        --USED TO LOCK OUR DEPENDENCY INTO STABLE VERSION BECAUSE TO RUN THE DEPENDENCY WE NEED THEIR VERSION.
+
+        6.PUBLIC:-
+        --This is also like SRC folder used by us when we are creating the project we will discuss it into our Practics project by commenting how this will works.
+            6.1.Manifest:-
+            --USED FOR MOBILE DEVICES FOR META TAGS. DOSEN'T MATTER WETHER IT WILL BE OR NOT.
+
+            6.2.Robots.txt:-
+            --IT IS USED FOR SEARCH ENGINE DOSEN'T MATTER WETHER IT WILL BE OR NOT.
+
+            6.3.Index.html:-
+            --THIS IS THE MAIN PAGE WHICH WILL BE LOAD SO IT IS CALLED SPA (SINGLE PAGE APPLICATION). We will discuss practically.
+
+
+        7.Overall :-
+        -- we can see that all our works will be done into PUBLIC AND SRC FOLDER WE WILL DISCUSS HOW TO USE THEM AND HOW THEY WORK BY PRACTICALLY.
+    )
+    Exception of that Rule:-
+
+)
+
+Concept 2(
+    #React Work Flow by eg/Default(
+        index.html
+        -- for injecting the jsx or js which are below:
+
+        index.js
+        -- for doing dom manuplation by virtual DOM and for rendering the exacted tag, class, id.
+            requirements:-
+            --import App.js
+            --import react
+            --import reactDom
+
+        App.js
+        -- for creating the the html tags by using function to inject it into index.html through index.js.
+            requirements:-
+            --we have to export the created function.
+    )
+)
+
+// Concept for doing the same above things by using other file name 
+
+Concept 3(
+    #React Work Flow by eg/Default(
+        intoMe.html
+        -- for injecting the jsx or js which are below:
+
+        Incerting.js
+        -- for doing dom manuplation by virtual DOM and for rendering the exacted tag, class, id.
+            requirements:-
+            --import App.js
+            --import react
+            --import reactDom
+
+        This.js
+        -- for creating the the html tags by using function to inject it into index.html through index.js.
+            requirements:-
+            --we have to export the created function.
+    )
+)
+
+//lastly{
+    from the above 2 concept we learn that we have to make file and use their work flow like this (This.js Incerting.js IntoMe.html) means we have to make the js file for incerting the html tags with requirement into it and then we have to Export it after that we have to import it into anouther js file by using reactdom and createroot method of react for rendering it into the html page. and then we have to use fragments and inside the fragments we have to use this < /> into the space area we have to call the incerted js file before we created. ALL DONE.
+}
+
+note(
+    Use capatalized words for creating js or jsx file.
+    to abvoid errors.
+    Use jsx for vite react app and use eaither js or jsx for react app.
+)
