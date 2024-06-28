@@ -1,3 +1,4 @@
+import Test from "./Test"
 function App() {
   return (
     <>
@@ -5,6 +6,7 @@ function App() {
       <p>
         Click on the Vite and React logos to learn more
       </p>
+      <Test/>
     </>
   )
 }

@@ -12,5 +12,6 @@ git branch -M main
 git remote add origin https://github.com/itzmejanak/ReactJS_Practice.git
 git push -u origin main
 
+// npx tailwindcss -i ./src/input.css -o ./Dist/styles.css --watch
 
 //Git_Best_CMD for Uploading folder
