@@ -1,0 +1,75 @@
+nav {
+  display: flex;
+  border-bottom: 2px solid #f3f3f3;
+  justify-content: space-between; /* Changed to space-between for better responsive behavior */
+  align-items: center;
+  padding: 20px;
+  z-index: 999;
+  margin-left: 20rem; /* Consider removing fixed margin-left for responsiveness */
+}
+
+nav input {
+  padding: 12px 20px;
+  border: none;
+  background: #f7f6f6;
+  outline: none;
+  margin-right: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+nav .inputDiv{
+  width: 14rem;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-icons {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 2rem;
+}
+
+nav .nav-button {
+  margin-left: 2rem;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-right:6rem;
+  font-size: 1rem;
+}
+
+nav .nav-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0; /* Remove fixed margin for smaller screens */
+  }
+
+  nav input{
+    margin-right: 0;
+    margin-left: 10rem;
+    width: 4rem;
+  }
+
+  .profile-container1 {
+    margin-top: 10px; /* Adjust spacing between elements */
+  }
+
+  .nav-button {
+    margin-left: 10px; /* Remove left margin for buttons on smaller screens */
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,84 @@
+/* Sidebar Title */
+.sidebar-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333; /* Dark text color */
+}
+
+/* Sidebar Items */
+.sidebar-items {
+  margin-top: 20px;
+}
+
+/* Sidebar Label Container */
+.sidebar-label-container {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-label-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Checkmark Circle */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ddd; /* Light gray background */
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+/* Gradient Background Example */
+.all {
+  background: linear-gradient(to right, #4CAF50, #2196F3); /* Gradient background */
+  color: white; /* Text color */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+  text-align: center; /* Centered text */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.all:hover {
+  background-color: #45a049; /* Darker background color on hover */
+}
+
+/* Checkmark Inner Circle */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white; /* White inner circle */
+}
+
+/* Checked State */
+.sidebar-label-container input:checked ~ .checkmark {
+  background-color: #2196f3; /* Blue background when checked */
+}
+
+.sidebar-label-container input:checked ~ .checkmark:after {
+  display: block; /* Show inner circle when checked */
+}
+
+/* Line Separator */
+.line {
+  margin-top: 3rem;
+  border-top: 1px solid #eee; /* Light gray line */
+}

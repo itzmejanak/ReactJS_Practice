@@ -1,0 +1,13 @@
+`useCallback`:
+- Imagine you have a button that you click to do something, like increase a counter.
+- When you click the button, the parent component (the one that contains the button) re-renders.
+- Without `useCallback`, every time the parent component re-renders, it would create a new version of the function that's used when you click the button.
+- `useCallback` helps by saving, or "caching", the function. So even if the parent component re-renders, the same function is used for the button click, instead of creating a new one.
+- This can help improve the app's performance, especially if the function is used in multiple places.
+
+`useEffect`:
+- Imagine you have a component that needs to do something when it first appears on the screen, like fetch some data from an website.
+- `useEffect` is used to tell React to do that "something" (fetch the data) when the component first appears.
+- It's kind of like telling React: "Hey, when this component loads for the first time, please go do this thing for me."
+- `useEffect` can also be used to tell React to do something when certain data changes in the component, not just when it first appears.
+- This helps keep the component's main job (displaying the UI) separate from the extra things it needs to do, like fetching data.

@@ -1,0 +1,99 @@
+.profile-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    border: 2px solid #ccc; /* Add a solid border */
+  }
+  
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-details {
+    flex: 1;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn-save,
+  .btn-cancel {
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  .btn-edit{
+    padding: 8px 16px;
+    margin-right: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .btn-save {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .btn-cancel {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .btn-edit {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .imageDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  #profileImage {
+    display: none;
+  }
+  

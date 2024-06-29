@@ -1,0 +1,84 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5; /* Light grey background */
+}
+
+.login-form {
+  width: 350px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333333; /* Dark grey heading */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555555; /* Grey label text */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dddddd; /* Light grey border */
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Focus color */
+}
+
+.btn-login {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #101b27; /* Primary blue button */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-login:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signup-link p {
+  margin: 0;
+  color: #777777; /* Grey text */
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.signup-link a:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
