@@ -10,6 +10,7 @@ import "./index.css";
 import Login from './LoginSignup/login/Login.jsx';
 import Signup from './LoginSignup/signUp/Signup.jsx';
 import Profile from "./Profile/Profile.jsx";
+import ProductPage from "./ProductDtls/ProductPage.jsx";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -72,6 +73,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/Profile" element={<Profile />} />
+        <Route path="/Products" element={<ProductPage />} />
         <Route path="/" element={
           <>
             <Sidebar handleChange={handleChange} />

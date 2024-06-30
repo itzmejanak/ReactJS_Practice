@@ -1,0 +1,170 @@
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-page {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.product-page .breadcrumbs {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.product-page .breadcrumbs a {
+    color: #666;
+    text-decoration: none;
+}
+
+.product-page .breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.product-page .product-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.product-page .image-gallery {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 300px;
+}
+
+.product-page .main-image {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.product-page .thumbnail-images {
+    display: flex;
+    gap: 10px;
+}
+
+.product-page .thumbnail-images img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.product-page .thumbnail-images img:hover {
+    border-color: #000;
+}
+
+.product-page .product-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 300px;
+}
+
+.product-page .product-details h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #333;
+}
+
+.product-page .product-details p {
+    font-size: 18px;
+    color: #777;
+}
+
+.product-page .reviews {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.product-page .reviews span {
+    font-size: 14px;
+}
+
+.product-page .price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+}
+
+.product-page .size-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-page .size-selection h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.product-page .sizes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-page .sizes button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.product-page .sizes button:hover {
+    background: #f0f0f0;
+}
+
+.product-page .size-guide {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.product-page .size-guide:hover {
+    text-decoration: underline;
+}
+
+.product-page .add-to-cart {
+    padding: 15px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.product-page .add-to-cart:hover {
+    background: #333;
+}
+
+.product-page .delivery-info {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
