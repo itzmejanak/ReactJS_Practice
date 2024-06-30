@@ -3,8 +3,19 @@ import { Link } from "react-router-dom";
 
 const Card = ({ img, title, star, reviews, prevPrice, newPrice }) => {
   return (
-    <>
-    <Link to="/Products">
+    <Link
+      to={{
+        pathname: "/Products",
+        state: {
+          img,
+          title,
+          star,
+          reviews,
+          prevPrice,
+          newPrice,
+        },
+      }}
+    >
       <section className="card">
         <img src={img} alt={title} className="card-img" />
         <div className="card-details">
@@ -23,8 +34,7 @@ const Card = ({ img, title, star, reviews, prevPrice, newPrice }) => {
           </section>
         </div>
       </section>
-      </Link>
-    </>
+    </Link>
   );
 };
 

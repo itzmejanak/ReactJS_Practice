@@ -1,8 +1,19 @@
 import React from 'react';
 import './ProductPage.css';
 import Nav from '../Navigation/Nav';
+import { useLocation } from 'react-router-dom';
 
 const ProductPage = () => {
+    const location = useLocation();
+    const { img, title, star, reviews, prevPrice, newPrice } = location.state || {
+        img: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
+        title: "Nike Air Force 1 '07",
+        star: "⭐",
+        reviews: "42",
+        prevPrice: "$130.00",
+        newPrice: "$115.00"
+    };
+
     return (
         <>
             <Nav />
@@ -12,23 +23,25 @@ const ProductPage = () => {
                 </div>
                 <div className="product-container">
                     <div className="image-gallery">
-                        <img src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg" alt="Nike Air Force 1" className="main-image"/>
+                        <img src={img} alt={title} className="main-image" />
                         <div className="thumbnail-images">
-                            <img src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg" alt="Nike Air Force 1" />
-                            <img src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg" alt="Nike Air Force 1" />
-                            <img src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg" alt="Nike Air Force 1" />
-                            <img src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg" alt="Nike Air Force 1" />
-                            <img src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg" alt="Nike Air Force 1" />
+                            <img src={img} alt={title} />
+                            <img src={img} alt={title} />
+                            <img src={img} alt={title} />
+                            <img src={img} alt={title} />
+                            <img src={img} alt={title} />
                         </div>
                     </div>
                     <div className="product-details">
-                        <h1>Nike Air Force 1 '07</h1>
+                        <h1>{title}</h1>
                         <p>Women's Shoes</p>
                         <div className="reviews">
-                            <span>⭐⭐⭐⭐☆</span>
-                            <span>42 reviews</span>
+                            {Array(4).fill(<span>⭐</span>)} <span>☆</span>
+                            <span>{reviews} reviews</span>
                         </div>
-                        <div className="price">$115.00</div>
+                        <div className="price">
+                            <del>{prevPrice}</del> {newPrice}
+                        </div>
                         <div className="size-selection">
                             <h3>Select Size</h3>
                             <div className="sizes">
